@@ -2,12 +2,12 @@ version: '3'
 services:
   flask-backend:
     build:
-      context: ./flask-backend
+      context: ./backend/app.py
     ports:
       - 5000:5000
 
   react-frontend:
     build:
-      context: ./my-app
+      context: ./frontend/app.js
     ports:
       - 3000:3000
